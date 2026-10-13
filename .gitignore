@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+
+.env
+.venv/
+.venv*/
+venv/
+
+# model caches
+.cache/
+*.bin
+*.safetensors
+
+# eval outputs
+evals/results/*.json
+!evals/results/.gitkeep
+
+# local data
+data/seed/*.db
+*.sqlite
+*.sqlite3
+
+# ide
+.vscode/
+.idea/
+.DS_Store
+
+# docker volumes
+docker/.volumes/
+
+# build artefacts
+*.egg-info/

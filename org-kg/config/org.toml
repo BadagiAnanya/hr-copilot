@@ -1,0 +1,42 @@
+# Org definition for the knowledge graph.
+# In a real company this file is replaced by a sync from the source of truth
+# (GitHub Teams / CODEOWNERS / Backstage catalog). Here a personal GitHub account
+# stands in for the org and repos are grouped into "teams" by hand.
+
+[org]
+name = "BadagiAnanya"
+github_owner = "BadagiAnanya"
+owner_type = "user"          # "user" or "org"
+include_forks = true
+max_repo_size_kb = 100000
+
+[llm]
+# provider = "anthropic" | "groq" | "auto" (auto: Anthropic if credentials exist, else Groq)
+provider = "auto"
+anthropic_model = "claude-opus-5-5"
+groq_model = "openai/gpt-oss-120b"
+
+[teams.backend-platform]
+name = "Backend Platform"
+description = "Backend services and core software-engineering building blocks (Java services, OOP foundations)."
+repos = ["mini-cdn", "payment-gateway", "Student-Result-Management-System", "oops", "OOP"]
+
+[teams.ml-engineering]
+name = "ML Engineering"
+description = "Classical ML: training pipelines, model packaging/serving and MLOps."
+repos = ["MachineLearning", "Student-Performance-Indicator", "Wine-Quality-Prediction", "Network_Security", "NetworkSecurity", "BentoML", "appgithubaction"]
+
+[teams.genai]
+name = "Generative AI"
+description = "LLM applications, chatbots and transformer experiments."
+repos = ["Generative-AI", "GenAI", "nanogpt", "Chatbot"]
+
+[teams.mobile]
+name = "Mobile"
+description = "iOS/Android apps around driving assistance and driver behaviour."
+repos = ["DrivingAssistance", "driver-behavior-analytics-android"]
+
+[teams.internal-tools]
+name = "Internal Tools"
+description = "Small utilities, demos and learning repos."
+repos = ["Streamlit", "PasswordGenerator.phy", "skills-introduction-to-github"]

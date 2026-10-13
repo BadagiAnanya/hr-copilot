@@ -1,0 +1,19 @@
+[project]
+name = "orgkg"
+version = "0.1.0"
+description = "Organisation knowledge graph: onboard onto any team's code through HLD/LLD, search and Q&A"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=1.0", "mcp>=2.0"]
+
+[project.optional-dependencies]
+groq = ["groq>=1.0"]
+dev = ["pytest"]
+
+[project.scripts]
+orgkg = "orgkg.cli:main"
+
+[tool.setuptools]
+packages = ["orgkg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

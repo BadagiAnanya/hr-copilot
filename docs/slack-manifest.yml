@@ -1,0 +1,35 @@
+# Paste into https://api.slack.com/apps → Create New App → From a manifest.
+# Uses Socket Mode, so no public URL or tunnel is needed for local dev.
+display_information:
+  name: Alex
+features:
+  app_home:
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: false
+  bot_user:
+    display_name: Alex
+    always_online: true
+  slash_commands:
+    - command: /ask
+      description: Ask an HR question
+      usage_hint: "[your question]"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+      - commands
+      - im:history
+      - im:read
+      - users:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - message.im
+  interactivity:
+    is_enabled: true
+  socket_mode_enabled: true
+  org_deploy_enabled: false
+  token_rotation_enabled: false
