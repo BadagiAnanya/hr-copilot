@@ -3,7 +3,7 @@
 A production-shaped RAG + tool-use agent for internal HR questions, deployed to Slack.
 Built on $0 of infra using free tiers and open-source tools.
 
-**Demo:** [one-minute narrated walkthrough](https://claude.ai/artifact/8wVoQVbNdNUBNtexm5Tthf) — a simulated Slack conversation showing the four core behaviours.
+**Demo:** [watch the one-minute demo video](docs/alex_demo.webm) — Alex answering HR questions in Slack.
 
 ## What it does
 
