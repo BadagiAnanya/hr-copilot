@@ -1,5 +1,5 @@
 from app.agent.nodes import do_guardrails, _extract_citations
-from app.types import Citation, RetrievedChunk, Trace, UserContext
+from app.types import RetrievedChunk, Trace, UserContext
 
 
 def _trace(**kw) -> Trace:

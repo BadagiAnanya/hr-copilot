@@ -11,7 +11,6 @@ import logging
 from contextlib import asynccontextmanager
 import structlog
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
 from .config import get_settings
 from slack_bolt.adapter.socket_mode.async_handler import AsyncSocketModeHandler
 from .slack.bolt_app import get_app, get_handler
