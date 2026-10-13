@@ -11,7 +11,6 @@ import asyncio
 import hashlib
 import json
 import sys
-from datetime import date
 from pathlib import Path
 import psycopg
 from ..cache.semantic import invalidate_for_documents

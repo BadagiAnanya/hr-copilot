@@ -2,7 +2,6 @@
 from __future__ import annotations
 import asyncio
 import json
-import os
 from typing import Any, Optional
 from groq import AsyncGroq
 from .config import get_settings

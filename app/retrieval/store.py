@@ -32,7 +32,6 @@ async def hybrid_search(
     Keeping dense and BM25 as CTEs makes the query readable and lets the planner
     use each index independently.
     """
-    s = get_settings()
     emb_literal = "[" + ",".join(f"{x:.6f}" for x in query_embedding) + "]"
 
     sql = f"""

@@ -1,6 +1,5 @@
 """LLM-as-judge rubrics. Each returns a dict with a numeric score + rationale."""
 from __future__ import annotations
-import json
 from app.llm import complete_json
 
 
